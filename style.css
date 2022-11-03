@@ -1,0 +1,41 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ********** FIN RESET************** */
+main{
+padding: 10px;
+display: flex;
+flex-direction: row;
+}
+.boite{
+    background-color: lightslategray;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+@media screen and (min-width: 960px) {
+    main{
+
+    }
+}
+@media screen and (max-width: 374px) {
+
+    .boite:nth-of-type(even) {
+        display: none;   
+    }
+}
+@media screen and (min-width: 768px)  {
+
+    .boite:nth-of-type(odd) {
+        display: none;   
+    }
+}
